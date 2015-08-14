@@ -2,7 +2,7 @@
 
 Boatless is a bloatless package based on [HTML5 Boilerplate](https://html5boilerplate.com) containing [Normalize.css](https://necolas.github.com/normalize.css/) and [Modernizr](http://modernizr.com/), styled using [Stylus](http://stylus-lang.com/), and generated using [Gulp](http://gulpjs.com/) which runs on [Node.js](https://nodejs.org/).
 
-Boatless has a folder structure which focuses on clear naming and structuring which is a somewhat different approach when comparing to the  commonly used templates and frameworks. Normalize.css is combined with the default CSS from HTML5 Boilertemplate and structured for minimal overriding CSS rules. (I tend to favor Normalize.css CSS rules over HTML5 Boilertemplates CSS rules for some reason.)
+Boatless has a folder structure which focuses on clear naming and structuring which is a somewhat different approach when comparing to the  commonly used templates and frameworks. Normalize.css is combined with the default CSS from HTML5 Boilerplate and structured for minimal overriding CSS rules. (I tend to favor Normalize.css CSS rules over HTML5 Boilerplates CSS rules for some reason.)
 
 
 ## Getting started

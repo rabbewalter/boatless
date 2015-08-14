@@ -1,0 +1,39 @@
+/* Global border box for better control */
+* {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  &::after,
+  &::before {
+    -moz-box-sizing: inherit;
+         box-sizing: inherit;
+  }
+}
+
+
+body {
+  margin: 0; // Normalize
+}
+
+//! Uncommet for IE8/9 and early browser versions
+//article,
+//aside,
+//figcaption,
+//figure,
+//footer,
+//header,
+//hgroup,
+//menu,
+//nav,
+//section,
+main,
+details,
+summary {
+  display: block;  // Normalize
+}
+
+
+/* Includes */
+@import "global-header"
+@import "global-content"
+@import "global-footer"
+//@import "grid"

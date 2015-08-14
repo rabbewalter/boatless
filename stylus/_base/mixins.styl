@@ -1,0 +1,87 @@
+/*
+*  Base mixins
+*  Please note that Autoprefixer takes care of prefixes
+*  if you have not changed the base settings in the gulpfile.js -file
+*/
+
+/* Mediq querys
+*  See theme/typography -file for reference
+*  (+mq-min(48em) {color: tomato;})
+*/
+mq-min(argument) {
+  @media screen and (min-width: argument) {
+    block
+  }
+}
+
+mq-max(argument) {
+  @media screen and (max-width: argument) {
+    block
+  }
+}
+
+mq-min-max(argument1, argument2) {
+  @media screen and (min-device-width: argument1) and (max-device-width: argument2) {
+    block
+  }
+}
+
+
+/* For high DPI screens */
+mq2-min(argument) {
+  @media screen and (min-width: argument) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    block
+  }
+}
+
+mq2-max(argument) {
+  @media screen and (max-width: argument) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    block
+  }
+}
+
+mq2-min-max(argument1, argument2) {
+  @media screen and (min-device-width: argument1) and (max-device-width: argument2) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    block
+  }
+}
+
+
+/* Media querys including orientation */
+mqo-min(argument, orientation) {
+  @media screen and (min-width: argument) and (orientation: orientation) {
+    block
+  }
+}
+
+mqo-max(argument, orientation) {
+  @media screen and (max-width: argument) and (orientation: orientation) {
+    block
+  }
+}
+
+mqo-min-max(argument1, argument2, orientation){
+  @media screen and (min-device-width: argument1) and (max-device-width: argument2) and (orientation: orientation) {
+    block
+  }
+}
+
+
+/* For high DPI screens including orientation */
+mq2o-min(argument, orientation) {
+  @media screen and (min-width: argument) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi)and (orientation: orientation) {
+    block
+  }
+}
+
+mq2o-max(argument, orientation) {
+  @media screen and (max-width: argument) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (orientation: orientation) {
+    block
+  }
+}
+
+mq2o-min-max(argument1, argument2, orientation) {
+  @media screen and (min-device-width: argument1) and (max-device-width: argument2) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (orientation: orientation) {
+    block
+  }
+}

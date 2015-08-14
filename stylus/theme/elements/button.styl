@@ -1,0 +1,47 @@
+/* Local variables */
+$btn_radius = 0.1875em
+
+
+/* Button styles */
+.btn,
+button {
+  position: relative;    // If ripple effect is desired
+  display: inline-block;
+  margin: 0;             //Normalize
+  padding: 0.3em 0.7em;
+  border: 0.0625em solid $gray-light;
+
+  font: inherit;         //Normalize
+  text-transform: none;  //Normalize
+  text-decoration: none;
+  color: inherit;        //Normalize
+  background: transparent;
+  border-radius: $btn_radius;
+  //overflow: visible;
+  overflow: hidden;      // If ripple effect is desired
+  cursor: pointer;
+  
+  -webkit-appearance: none;
+  //-webkit-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  &:hover {
+    color: $blue;
+    border-color: $gray-light; // This overides the regular links border bottom color
+    box-shadow: 0 0 0.875em -0.25em $blue;
+  }
+  &:foucs {
+    box-shadow: none;
+  }
+}
+
+button[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner {
+  padding: 0; //Normalize
+  border: 0;  //Normalize
+}

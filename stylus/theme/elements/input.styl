@@ -1,0 +1,43 @@
+input {
+  margin: 0;           //Normalize
+  font: inherit;       //Normalize
+  color: inherit;      //Normalize
+  line-height: normal; //Normalize
+}
+
+input::-moz-focus-inner {
+  padding: 0; //Normalize
+  border: 0;  //Normalize
+}
+
+html input[disabled] {
+  cursor: default;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  padding: 0;             //Normalize
+  box-sizing: border-box; //Normalize
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; //Normalize
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield; //Normalize
+  box-sizing: content-box;       //Normalize
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; //Normalize
+}
+
+input[type="reset"],
+input[type="submit"],
+input[type="button"],
+html input[type="button"] {
+   @extend button;
+}

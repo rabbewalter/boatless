@@ -1,0 +1,15 @@
+// Organised list
+ol {
+  list-style: none;
+  padding-left: 1em;
+  counter-reset: section;
+  font-size: 1.1em;
+  @media screen and (min-width: $bp-s-up) {
+    font-size: 1em;
+  }
+  li:before {
+    padding-right: 1em;
+    counter-increment: section;
+    content: counters(section, ".") " ";
+  }
+}

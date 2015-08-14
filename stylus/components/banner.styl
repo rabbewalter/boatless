@@ -1,0 +1,29 @@
+.banner {
+  display: table-cell;
+  height: 100vh;
+  width: 100vw;
+  padding-left: $global-padding;
+  padding-right: $global-padding;
+
+  text-align: center;
+  vertical-align: middle;
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.banner__title {}
+
+.banner__btn__container {
+  width: 11em;
+  margin: 0 auto;
+}
+
+.banner__btn {
+  float: left;
+  border-radius: $btn_radius 0 0 $btn_radius;
+  &:last-child {
+    border-radius: 0 $btn_radius $btn_radius 0;
+  }
+}

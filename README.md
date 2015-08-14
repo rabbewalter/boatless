@@ -64,3 +64,9 @@ There is no way that this project could have been started without the awesome pe
 
 The code is available under the [MIT license](LICENSE).
 
+
+#### Minor tips
+
+* Learn [BEM](http://getbem.com/introduction/) if you are not familiar with it yet
+* Get your full favicon set by visiting and generating a favicon pack over at [Realfavicongenerator](http://realfavicongenerator.net/)
+* Don't work too long hours

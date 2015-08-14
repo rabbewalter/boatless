@@ -44,7 +44,7 @@ Download [latest release](https://github.com/rabbewalter/boatless/archive/master
 
 ## Run Gulp
 
-Run the Gulp command — `$ gulp` - in your terminal to start a local server with your default browser. Gulp listens to the changes in your *stylus* folder and copiles a new *main.css* -file depending on your settings. The browser window will then refresh with the new changes. You can of course change the folder settings in the `gulpfile.js` -file which is located on the root level.
+Run the Gulp command — `$ gulp` - in your terminal to start a local server with your default browser. Gulp listens to the changes in your *stylus* folder and compiles a new *main.css* -file depending on your settings. The browser window will then refresh with the new changes. You can of course change the folder settings in the `gulpfile.js` -file which is located on the root level.
 
 
 ## Credits and thanks (in no spesific order)

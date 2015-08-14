@@ -62,5 +62,5 @@ There is no way that this project could have been started without the awesome pe
 
 ## License
 
-The code is available under the [MIT license](LICENSE.txt).
+The code is available under the [MIT license](LICENSE).
 

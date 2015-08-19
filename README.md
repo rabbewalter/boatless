@@ -9,6 +9,14 @@ Boatless has a folder structure which focuses on clear naming and structuring wh
 
 Download [latest release](https://github.com/rabbewalter/boatless/archive/master.zip) or clone — `$ git clone https://github.com/rabbewalter/boatless.git` - and checkout the [tagged release](https://github.com/rabbewalter/boatless/releases) of your choosing.
 
+Boatless has been provided with a package manager which is powered by [gulp-load-plugins](https://www.npmjs.com/package/gulp-load-plugins).
+To isntall these you can simply install the package manager `$ npm install --save-dev gulp-load-plugins` in the root folder and complete the installation by running `$ npm install`.
+
+
+## Run Gulp
+
+Run the Gulp command — `$ gulp` - in your terminal to start a local server with your default browser. Gulp listens to the changes in your *stylus* folder and compiles a new *main.css* -file depending on your settings. The browser window will then refresh with the new changes. You can of course change the folder settings in the `gulpfile.js` -file which is located on the root level.
+
 
 ## Dependencies
 
@@ -29,25 +37,7 @@ Download [latest release](https://github.com/rabbewalter/boatless/archive/master
 * [Jeet grid for Stylus (Gulp)](https://www.npmjs.com/package/jeet)
 
 
-## Install the devDependencies in your project folder
-
-* `$ npm install --global gulp` (global and not needed if pre-installed)
-* `$ npm install --save-dev gulp`
-* `$ npm install --save-dev gulp-stylus`
-* `$ npm install --save-dev gulp-autoprefixer`
-* `$ npm install --save-dev gulp-minify-css`
-* `$ npm install --save-dev gulp-uglify`
-* `$ npm install --save-dev gulp-concat`
-* `$ npm install --save-dev gulp-rename`
-* `$ npm install gulp gulp-stylus jeet`
-
-
-## Run Gulp
-
-Run the Gulp command — `$ gulp` - in your terminal to start a local server with your default browser. Gulp listens to the changes in your *stylus* folder and compiles a new *main.css* -file depending on your settings. The browser window will then refresh with the new changes. You can of course change the folder settings in the `gulpfile.js` -file which is located on the root level.
-
-
-## Credits and thanks (in no spesific order)
+## Credits and thanks
 
 There is no way that this project could have been started without the awesome people behind some of the most used tools on the internet today, people who contribute and give us developers their personal time to push the web forward.
 * [HTML5 Boilerplate contributors](https://github.com/h5bp/html5-boilerplate/graphs/contributors)
@@ -57,7 +47,7 @@ There is no way that this project could have been started without the awesome pe
 * [Gulp contributors](https://github.com/gulpjs/gulp/graphs/contributors)
 * [Jeet contributors](https://github.com/mojotech/jeet/graphs/contributors)
 * [Stylus contributors](https://github.com/stylus/stylus/graphs/contributors)
-* All the people behind the Npm modules ([Npmjs](https://www.npmjs.com/))
+* All the people behind the Npm packages ([Npmjs](https://www.npmjs.com/))
 
 
 ## License

@@ -1,3 +1,10 @@
+### Release 1.1 (August 15, 2015)
+
+* Gulpfile.js updated to work with "gulp-load-plugins" npm package
+* devDependencies added to package.json
+* Instructions updated
+
+
 ### Release 1.0 (August 14, 2015)
 
 * Gulpfile.js added

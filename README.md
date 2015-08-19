@@ -10,7 +10,7 @@ Boatless has a folder structure which focuses on clear naming and structuring wh
 Download [latest release](https://github.com/rabbewalter/boatless/archive/master.zip) or clone — `$ git clone https://github.com/rabbewalter/boatless.git` - and checkout the [tagged release](https://github.com/rabbewalter/boatless/releases) of your choosing.
 
 Boatless has been provided with a package manager which is powered by [gulp-load-plugins](https://www.npmjs.com/package/gulp-load-plugins).
-To isntall these you can simply install the package manager `$ npm install --save-dev gulp-load-plugins` in the root folder and complete the installation by running `$ npm install`.
+To isntall these you can simply install the package manager `$ npm install --save-dev gulp-load-plugins` in the root folder. The grunt-load-plugins plugin will automatically lazyload the needed packages using the package.json -file.
 
 
 ## Run Gulp

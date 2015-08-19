@@ -1,16 +1,8 @@
 'use strict';
 
 /* Gulp settings */
-// Define used tools
-var gulp =         require('gulp');
-var jeet =         require('jeet');
-var stylus =       require('gulp-stylus');
-var rename =       require('gulp-rename');
-var concat =       require('gulp-concat');
-var minifyCss =    require('gulp-minify-css');
-var autoprefixer = require('gulp-autoprefixer');
-var webserver =    require('gulp-webserver');
-
+var gulp =    require('gulp');
+var plugins = require('gulp-load-plugins')();
 
 
 /* Local settings */
@@ -18,47 +10,47 @@ var $autoprefixVersion = 'last 2 versions';
 var $autoprefixCascade = true; // false
 var $minifyCssCompability = 'ie10'; // 'ie8'
 var $stylusCompress = true; // false
-var $serverBasePath = './'; // base folder from where your app is run
+var $serverBasePath = './'; // base folder from where your app is run i.e ./app
 
 
 
 // CSS prefixed and minified
 gulp.task('css', function () {
-  gulp.src('./stylus/_main.styl')
-    .pipe(stylus({
+  gulp.src('stylus/_main.styl')
+    .pipe(plugins.stylus({
         compress: $stylusCompress,
-        //use: [jeet()],
-        //paths: ['source/stylus']
+        //use: [jeet()], // use if you plan on using Jeet in your project
+        //paths: ['source/stylus'] // use if you plan on using Jeet in your project
       }))
-    .pipe(autoprefixer({
+    .pipe(plugins.autoprefixer({
         browsers: [$autoprefixVersion],
         cascade: $autoprefixCascade
       }))
-    .pipe(minifyCss({
+    .pipe(plugins.minifyCss({
         compatibility: $minifyCssCompability
       }))
-    .pipe(rename('main.css'))
-    .pipe(gulp.dest('./css'))
+    .pipe(plugins.rename('main.css'))
+    .pipe(gulp.dest('css'))
 });
 
 
 
 // Print styles prefixed and minified
 gulp.task('print', function () {
-  gulp.src('./stylus/_print.styl')
-    .pipe(stylus({
+  gulp.src('stylus/_print.styl')
+    .pipe(plugins.stylus({
         compress: $stylusCompress,
         //paths: ['source/stylus']
       }))
-    .pipe(autoprefixer({
+    .pipe(plugins.autoprefixer({
         browsers: [$autoprefixVersion],
         cascade: $autoprefixCascade
       }))
-    .pipe(minifyCss({
+    .pipe(plugins.minifyCss({
         compatibility: $minifyCssCompability
       }))
-    .pipe(rename('print.css'))
-    .pipe(gulp.dest('./css'))
+    .pipe(plugins.rename('print.css'))
+    .pipe(gulp.dest('css'))
 });
 
 
@@ -66,7 +58,7 @@ gulp.task('print', function () {
 // Server settings
 gulp.task('server', function() {
   gulp.src($serverBasePath)
-    .pipe(webserver({
+    .pipe(plugins.webserver({
       livereload: {
         enable: true,
         filter: function(fileName) {
@@ -88,7 +80,7 @@ gulp.task('server', function() {
 
 // Gulp watch
 gulp.task('watch', function () {
-   gulp.watch(['./stylus/*.styl', './stylus/**/*.styl'], ['css']);
+   gulp.watch(['stylus/*.styl', 'stylus/**/*.styl'], ['css']);
 });
 
 

@@ -35,6 +35,10 @@ Run the Gulp command — `$ gulp` - in your terminal to start a local server wit
 * [Concat for Gulp](https://www.npmjs.com/package/gulp-concat)
 * [Rename functions for Gulp](https://www.npmjs.com/package/gulp-rename)
 * [Jeet grid for Stylus (Gulp)](https://www.npmjs.com/package/jeet)
+* [Gulp load plugins](https://www.npmjs.com/package/gulp-load-plugins)
+* [Gulp jsHint](https://www.npmjs.com/package/gulp-jshint)
+* [Gulp uglify](https://www.npmjs.com/package/gulp-uglify)
+* [Gulp util](https://www.npmjs.com/package/gulp-util)
 
 
 ## Credits and thanks

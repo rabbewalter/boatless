@@ -60,7 +60,7 @@ gulp.task('js', function() {
   return gulp.src(['js/*.js', '!./node_modules/**'])
     .pipe(plugins.jshint())
     .pipe(plugins.jshint.reporter('default'))
-    .pipe(plugins.uglify()/*.on('error', plugins.gutil.log)*/)
+    .pipe(plugins.uglify()/*.on('error', plugins.util.log)*/)
     .pipe(plugins.concat('main.min.js'))
     .pipe(gulp.dest($serverBasePath + 'js_agg'));
 });

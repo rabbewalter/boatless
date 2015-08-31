@@ -10,7 +10,7 @@ var $autoprefixVersion = 'last 2 versions';
 var $autoprefixCascade = true; // false
 var $minifyCssCompability = 'ie10'; // 'ie8'
 var $stylusCompress = true; // false
-var $serverBasePath = './'; // base folder from where your app is run i.e ./app
+var $serverBasePath = './'; // base folder from where your app is run eg. ./app
 
 
 
@@ -55,6 +55,17 @@ gulp.task('print', function () {
 
 
 
+// JS
+gulp.task('js', function() {
+  return gulp.src(['js/*.js', '!./node_modules/**'])
+    .pipe(plugins.jshint())
+    .pipe(plugins.jshint.reporter('default'))
+    .pipe(plugins.uglify()/*.on('error', plugins.gutil.log)*/)
+    .pipe(plugins.concat('main.min.js'))
+    .pipe(gulp.dest($serverBasePath + 'js_agg'));
+});
+
+
 // Server settings
 gulp.task('server', function() {
   gulp.src($serverBasePath)
@@ -83,8 +94,11 @@ gulp.task('watch', function () {
    gulp.watch(['stylus/*.styl', 'stylus/**/*.styl'], ['css']);
 });
 
+// Gulp watch scripts
+gulp.task('scripts', function () {
+   gulp.watch(['js/*.js', 'js/**/*.js','!**/modernizr**'], ['js']);
+});
 
 
 // Initiate default
-gulp.task('default', ['css', 'print', 'server', 'watch']);
-
+gulp.task('default', ['scripts', 'css', 'print', 'styles', 'server']);

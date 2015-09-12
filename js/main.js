@@ -3,7 +3,7 @@
  *  call: if (cssBreakpoint === 's')
  */
 var jsHelperClass = document.querySelector('.js-resize-helper');
-var cssBreakpoint = window.getComputedStyle(jsHelperClass, '::after').content;
+var cssBreakpoint = jsHelperClass ? window.getComputedStyle(jsHelperClass, '::after').content : undefined;
 
 
 

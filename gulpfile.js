@@ -89,16 +89,16 @@ gulp.task('server', function() {
 
 
 
-// Gulp watch
-gulp.task('watch', function () {
-   gulp.watch(['stylus/*.styl', 'stylus/**/*.styl'], ['css']);
+// Gulp watch styles changes
+gulp.task('styles', function () {
+   gulp.watch(['stylus/*.styl', 'stylus/**/*.styl', 'stylus/**/**/*.styl'], ['css']);
 });
 
-// Gulp watch scripts
+// Gulp watch scripts changes
 gulp.task('scripts', function () {
    gulp.watch(['js/*.js', 'js/**/*.js','!**/modernizr**'], ['js']);
 });
 
 
 // Initiate default
-gulp.task('default', ['scripts', 'css', 'print', 'server']);
+gulp.task('default', ['scripts', 'css', 'print', 'server', 'styles']);

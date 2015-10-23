@@ -2,6 +2,7 @@
  *  JS access CSS helper class containing breakpoints
  *  call: if (cssBreakpoint === 's')
  */
+
 var jsHelperClass = document.querySelector('.js-resize-helper');
 var cssBreakpoint = jsHelperClass ? window.getComputedStyle(jsHelperClass, '::after').content : undefined;
 

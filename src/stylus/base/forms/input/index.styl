@@ -1,0 +1,31 @@
+/*
+ * Input styles
+ * [1] Normalize
+ */
+
+input {
+  margin: 0; // [1]
+
+  font: inherit; // [1]
+  line-height: normal; // [1]
+  color: inherit; // [1]
+}
+
+input::-moz-focus-inner {
+  padding: 0; // [1]
+  border: 0; // [1]
+}
+
+html input[disabled] {
+  cursor: default; // [1]
+}
+
+
+/* Includes */
+@require "input.button"
+@require "input.checkbox"
+@require "input.number"
+@require "input.radio"
+@require "input.reset"
+@require "input.search"
+@require "input.submit"

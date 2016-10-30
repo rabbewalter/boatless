@@ -1,20 +1,23 @@
 {
   "name": "Boatless",
-  "version": "1.1",
-  "description": "A bloatless package based on Boilerplate containing normalize.css and Modernizr, styled using Stylus, and generated using Gulp.",
-  "dependencies": {},
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^2.3.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-jshint": "^1.11.2",
-    "gulp-load-plugins": "^1.0.0",
-    "gulp-minify-css": "^1.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-stylus": "^2.0.6",
-    "gulp-uglify": "^1.2.0",
-    "gulp-util": "^3.0.6",
-    "gulp-webserver": "^0.9.1",
-    "jeet": "6.1.2 "
-  }
+  "version": "2.0.0",
+  "description": "Boatless is a bloatless starter pack for fast web development.",
+  "dependencies": {
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "3.1.0",
+    "browser-sync": "2.17.3",
+    "gulp-clean-css": "2.0.10",
+    "gulp-concat": "2.6.0",
+    "gulp-htmlmin": "3.0.0",
+    "gulp-inline-source": "3.0.0",
+    "gulp-imagemin": "3.0.3",
+    "gulp-jshint": "2.0.1",
+    "gulp-load-plugins": "1.2.4",
+    "gulp-rename": "1.2.2",
+    "gulp-stylus": "2.4.0",
+    "gulp-twig": "0.5.0",
+    "gulp-uglify": "1.5.3",
+    "gulp-util": "3.0.7"
+  },
+  "devDependencies": {}
 }

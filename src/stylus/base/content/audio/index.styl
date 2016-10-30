@@ -1,0 +1,18 @@
+/*
+ * Audio element styles
+ * [1] Normalize
+ */
+
+audio {
+  display: inline-block; // [1]
+
+  vertical-align: baseline; // [1]
+
+  // Browser specific
+  -webkit-appearance: button; // [1]
+}
+
+audio:not([controls]) {
+  display: none; // [1]
+  height: 0; // [1]
+}

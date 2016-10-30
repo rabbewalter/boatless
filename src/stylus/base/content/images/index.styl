@@ -1,0 +1,21 @@
+/*
+ * Image styles
+ * [1] Normalize
+ * [2] Boilerplate
+ */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0 // [1]
+
+  vertical-align: middle; // [2]
+}
+
+/* Hide image tags with undefined source */
+img[src=""] {
+  display: none;
+}
+
+/* Possible imports */
+@import "figure"

@@ -1,0 +1,16 @@
+/*
+ * Link styles
+ */
+
+/* Normalize [1] */
+a {
+  color: rgb(62, 191, 237);
+  text-decoration: none;
+  background-color: transparent; // [1] // consider using "background" instead
+
+  &:hover,
+  &:active {
+    outline: 0;  // [1]
+    text-decoration: underline;
+  }
+}

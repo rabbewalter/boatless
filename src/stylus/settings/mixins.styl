@@ -1,0 +1,35 @@
+//////////////////////////////////////////////
+//
+//  Custom mixins
+//
+//  - breakpoints
+//
+//////////////////////////////////////////////
+
+
+/*
+ * Breakpoint mixin
+ * - separated due to context
+ * - "Mobile first" would dictate that styles are extended from small to large screens
+ *
+ * Media queries can be nested in Stylus.
+ * Usage: +bp(narrow) {color: tomato;}
+ * Nested: +bp(narrow) {color: tomato; +bp(wide) {color: banana;}}
+ */
+
+// Require breakpoints
+@require "breakpoints"
+
+// Breakpoint usage
+bp(breakpoints) {
+  conditions = ()
+  for breakpoint in breakpoints {
+    push(conditions, media_queries[breakpoint])
+  }
+
+
+  conditions = join(", ", conditions)
+  @media conditions {
+      block
+    }
+}

@@ -1,0 +1,21 @@
+{# index.html #}
+{% extends '_layouts/base.layout.twig' %}
+{# extends '_components/grid.component.twig' #}
+
+{# Needed variables #}
+{% set title = "This page title" %}
+{% set description = "This page description" %}
+{# set grid_container_element = "main" #}
+
+
+{# Page content #}
+{% block content %}
+  {% embed '_components/grid.component.twig' %}
+    {% block grid_content %}
+      <article class="l-grid__col--12">
+        <h1>Page header</h1>
+        <p>Page paragraph.</p>
+      </article>
+    {% endblock %}
+  {% endembed %}
+{% endblock %}

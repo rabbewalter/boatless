@@ -1,0 +1,22 @@
+/*
+ * HTML normalize
+ */
+
+
+
+/* Global border box for better control */
+* {
+  box-sizing: border-box;
+
+  &::after,
+  &::before {
+    box-sizing: inherit;
+  }
+}
+
+
+
+/* Disable vertical overflow */
+html {
+  overflow-x: hidden;
+}

@@ -1,0 +1,47 @@
+/*
+ * Button styles
+ * [1] Normalize
+ */
+
+
+button,
+.button {
+  display: inline-block;
+  width: auto;
+  margin: 0; // [1]
+  padding: 0.625em 2em 0.6em;
+
+  border: 0.0625em solid;
+  border-radius: 0.125em;
+  background: transparent;
+
+  font: inherit; // [1]
+  font-weight: bold;
+  text-transform: none; // [1]
+  text-decoration: none;
+  color: inherit; // [1]
+
+
+  -webkit-appearance: none;
+  user-select: none;
+  cursor: pointer;
+  outline: 0;
+
+  &:hover {}
+  &:foucs {}
+
+  [disabled] {
+    cursor: default;
+  }
+
+  // Browser specifics
+  ::-moz-focus-inner {
+    padding: 0; // [1]
+    border: 0; // [1]
+  }
+}
+
+
+
+/* Possible imports */
+@require "button.variants"

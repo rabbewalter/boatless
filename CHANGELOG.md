@@ -1,3 +1,16 @@
+### Release 2.0 (Oct 30, 2016)
+
+* Template engines included (Twig)
+* Gulpfile.js: updated modules and Jeet removed
+* "inline" css/script added
+* "minimize" html lib added
+* Browserify added
+* Imagemin added
+* Gulp tasks updated
+* Theme CSS structure reworked ("dist" and "src" folders)
+* Instructions updated
+
+
 ### Release 1.1 (August 15, 2015)
 
 * Gulpfile.js updated to work with "gulp-load-plugins" npm package

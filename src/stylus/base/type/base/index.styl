@@ -1,13 +1,22 @@
 /*
  * Base document font settings
  * [1] Normalize
+ * [2] Sharper letters on thin fonts
  */
 
 html {
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.4;
-  font-family: Arial, sans-serif; // [1]
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  text-rendering: optimizeLegibility; // [2]
+
+  -ms-text-size-adjust: 100%; // [1]
+
   -webkit-text-size-adjust: 100%; // [1]
   -webkit-font-smoothing: antialiased; // [1]
-  -ms-text-size-adjust: 100%; // [1]
+  -webkit-font-smoothing: antialiased; // [2]
+
+  -moz-osx-font-smoothing: grayscale; // [2]
+  -moz-font-feature-settings: 'liga', 'kern'; // [2]
 }

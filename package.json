@@ -1,7 +1,7 @@
 {
   "name": "Boatless",
   "version": "2.0.0",
-  "description": "Boatless is a bloatless starter pack for fast web development.",
+  "description": "Boatless is a bloatless template for fast web development.",
   "dependencies": {
     "gulp": "3.9.1",
     "gulp-autoprefixer": "3.1.0",

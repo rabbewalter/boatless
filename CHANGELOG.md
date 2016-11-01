@@ -1,3 +1,11 @@
+### Release 2.0.1 (Nov 1, 2016)
+
+* Gulp tasks "scripts" run speed improved
+* Package description updated
+* Minor updates to base (CSS) files
+* Font rendering options added
+
+
 ### Release 2.0 (Oct 30, 2016)
 
 * Template engines included (Twig)

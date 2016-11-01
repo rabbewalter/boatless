@@ -221,8 +221,8 @@ gulp.task('scripts', function () {
    gulp.watch([
                $src + 'js/*.js',
                $src + 'js/**/*.js',
-               '!**/modernizr**',
-               '!**/vendor**'
+               '!' + $src  + '**/modernizr**',
+               '!' + $src  + '**/vendor**'
               ], ['js']);
 });
 

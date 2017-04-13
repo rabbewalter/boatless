@@ -1,5 +1,7 @@
-[#Stylys](http://stylus-lang.com/ "Stylus homepage")
-Stylus is a dynamic stylesheet language that is compiled into Cascading Style Sheets (CSS). Its design is influenced by Sass and LESS. It's regarded as the [third most used CSS preprocessor syntax](https://css-tricks.com/poll-results-popularity-of-css-preprocessors/ "CSS-tricks.com"). It was created by TJ Holowaychuk, a former programmer for Node.js and the creator of the Luna language. It is written in JADE and Node.js.
+**[Stylus](http://stylus-lang.com/ "Stylus homepage")** is a dynamic stylesheet language that is compiled into Cascading Style Sheets (CSS).
+Its design is influenced by Sass and LESS.
+It's regarded as the [third most used CSS preprocessor syntax](https://css-tricks.com/poll-results-popularity-of-css-preprocessors/ "CSS-tricks.com").
+It was created by TJ Holowaychuk, a former programmer for Node.js and the creator of the Luna language. It is written in JADE and Node.js.
 
 
 

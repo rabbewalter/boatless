@@ -104,6 +104,9 @@ There is no way that this project could have been started without the awesome pe
 * [Stylus contributors](https://github.com/stylus/stylus/graphs/contributors)
 * All the people behind the Npm packages ([Npmjs](https://www.npmjs.com/))
 
+### From the community with love
+
+* [@akx](https://github.com/akx)
 
 ## License
 
